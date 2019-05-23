@@ -6,6 +6,10 @@ def oxford_comma(array)
   elsif array.size >= 3
     message = ", and " + array.pop
     message = array.join(", ") << message
+    
+    # found another way to do this
+    # array[-1] = "and #{array[-1]}"
+    # array.join(", ")
   end
   
 end
